@@ -1,0 +1,40 @@
+{
+  "name": "pambda-github-fetch",
+  "version": "0.0.1",
+  "description": "Pambda to render GitHub contents",
+  "author": "Kengo Nakatsuka <kengo.nakatsuka@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/pambda/pambda-github-fetch/issues"
+  },
+  "dependencies": {
+    "concat-stream": "^1.6.0",
+    "mime-types": "^2.1.15"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.5.0",
+    "eslint": "^3.19.0"
+  },
+  "homepage": "https://github.com/pambda/pambda-github-fetch",
+  "keywords": [
+    "aws",
+    "github",
+    "lambda",
+    "pambda"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pambda/pambda-github-fetch.git"
+  },
+  "scripts": {
+    "build": "npm run lint && babel -d lib/ src/",
+    "lint": "eslint src"
+  },
+  "files": [
+    "README.md",
+    "lib/"
+  ]
+}
