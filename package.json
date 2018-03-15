@@ -7,11 +7,11 @@
     "url": "https://github.com/pambda/pambda-github-fetch/issues"
   },
   "dependencies": {
-    "concat-stream": "^1.6.0",
-    "mime-types": "^2.1.16"
+    "concat-stream": "^1.6.1",
+    "mime-types": "^2.1.18"
   },
   "devDependencies": {
-    "eslint": "^4.3.0"
+    "eslint": "^4.18.2"
   },
   "homepage": "https://github.com/pambda/pambda-github-fetch",
   "keywords": [
