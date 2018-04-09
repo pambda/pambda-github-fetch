@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "concat-stream": "^1.6.1",
+    "lambda-callbackify": "0.0.1",
     "mime-types": "^2.1.18"
   },
   "devDependencies": {
