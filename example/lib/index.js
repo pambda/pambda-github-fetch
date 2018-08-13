@@ -29,10 +29,7 @@ exports.handler = createLambda(
       binaryMediaTypes: [ 'image/*' ],
     }),
 
-    githubFetch({
-      user: process.env.GITHUB_USER,
-      token: process.env.GITHUB_TOKEN,
-    }),
+    githubFetch(),
 
     serveStatic('public', {
       basePath: '/',

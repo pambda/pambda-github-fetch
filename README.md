@@ -43,8 +43,10 @@ exports.handler = createLambda(
 
 - `options.user`
     - An user ID of GitHub.
+    - Default: `process.env.GITHUB_USER`
 - `options.token`
     - A token to use GitHub API.
+    - Default: `process.env.GITHUB_TOKEN`
 - `options.render`
     - A function to modify HTML contents.
 - `options.preamble`
