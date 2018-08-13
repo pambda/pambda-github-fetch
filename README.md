@@ -5,18 +5,18 @@
 ## Installation
 
 ```
-npm i pambda-github-fetch -S
+npm i pambda-github-fetch
 ```
 
 ## Usage
 
 ``` javascript
-import { compose, createLambda } from 'pambda';
-import { binarySupport } from 'pambda-binary-support';
-import { cache } from 'pambda-cache';
-import { githubFetch } from 'pambda-github-fetch';
+const { compose, createLambda } = require('pambda');
+const { binarySupport } = require('pambda-binary-support');
+const { cache } = require('pambda-cache');
+const { githubFetch } = require('pambda-github-fetch');
 
-export const handler = createLambda(
+exports.handler = createLambda(
   compose(
     cache(),
     binarySupport(),
