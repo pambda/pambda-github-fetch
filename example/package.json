@@ -1,0 +1,27 @@
+{
+  "name": "pambda-github-fetch-example",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "lambda-checkenv": "^0.1.0",
+    "lambda-console": "0.0.2",
+    "pambda": "0.0.4",
+    "pambda-404": "0.0.2",
+    "pambda-aws": "0.0.6",
+    "pambda-binary-support": "0.0.6",
+    "pambda-errorhandler": "^0.1.0",
+    "pambda-github-fetch": "file:..",
+    "pambda-logger": "^0.1.0",
+    "pambda-serve-static": "0.0.5"
+  },
+  "devDependencies": {
+    "api-gateway-local": "^0.2.5",
+    "aws-sdk": "^2.291.0",
+    "cfn-package": "^0.1.3"
+  },
+  "scripts": {
+    "predeploy": "cfn-package --template-file template.yaml --output-template-file output-template.yaml --s3-bucket node-tmp",
+    "deploy": "aws cloudformation deploy --stack-name pambda-github-fetch-example-e17la59rixw --template-file output-template.yaml --capabilities CAPABILITY_NAMED_IAM",
+    "start": "api-gateway-local start -r us-west-2 --template-file template.yaml"
+  }
+}
