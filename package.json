@@ -1,6 +1,6 @@
 {
   "name": "pambda-github-fetch",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Pambda to render GitHub contents",
   "author": "Kengo Nakatsuka <kengo.nakatsuka@gmail.com>",
   "bugs": {
