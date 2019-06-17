@@ -49,6 +49,10 @@ exports.handler = createLambda(
     - Default: `process.env.GITHUB_TOKEN`
 - `options.render`
     - A function to modify HTML contents.
+    - The form of this function is `(result, event, context, callback)`.
+- `options.renderIndex`
+    - A function to render index pages.
+    - The form of this function is `(indexJson, options, event, context, callback)`.
 - `options.preamble`
     - A string is inserted at the head of HTML contents.
     - This option is ignored if `render` is specified.

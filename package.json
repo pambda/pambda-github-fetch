@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "lambda-callbackify": "0.0.1",
+    "lambda-url-resolver": "^0.1.2",
     "mime-types": "^2.1.18"
   },
   "devDependencies": {
