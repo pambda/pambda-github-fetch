@@ -53,6 +53,5 @@ test('test', t => {
   }, {}, (err, result) => {
     t.error(err);
     t.equal(result.statusCode, 200);
-    console.dir(result);
   });
 });
